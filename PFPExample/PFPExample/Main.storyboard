@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="KCL-st-Q6e">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--Details View Controller-->
+        <scene sceneID="WjQ-tb-BtJ">
+            <objects>
+                <viewController id="KCL-st-Q6e" customClass="PVPFPDetailsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aZP-Vb-zhE"/>
+                        <viewControllerLayoutGuide type="bottom" id="g5r-EZ-Jhd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kP7-5S-5sI">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UXJ-Zn-xi4">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="104"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Fma-2Y-xBk">
+                                        <rect key="frame" x="20" y="72" width="280" height="29"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <segments>
+                                            <segment title="" image="Spray Icon Segmented"/>
+                                            <segment title="" image="Fertilizer Icon Segmented"/>
+                                            <segment title="" image="Temperature Icon Segmented"/>
+                                            <segment title="" image="Ligth Icon Segmented"/>
+                                        </segments>
+                                        <connections>
+                                            <action selector="sampleTypeChanged:" destination="KCL-st-Q6e" eventType="valueChanged" id="IVx-z0-fJv"/>
+                                        </connections>
+                                    </segmentedControl>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Fma-2Y-xBk" secondAttribute="bottom" constant="4" id="HLD-oT-mN9"/>
+                                    <constraint firstAttribute="trailing" secondItem="Fma-2Y-xBk" secondAttribute="trailing" constant="20" id="TM2-Cb-rHk"/>
+                                    <constraint firstItem="Fma-2Y-xBk" firstAttribute="leading" secondItem="UXJ-Zn-xi4" secondAttribute="leading" constant="20" id="Yoz-sp-xm5"/>
+                                    <constraint firstAttribute="height" constant="104" id="c3F-W6-l6M"/>
+                                    <constraint firstItem="Fma-2Y-xBk" firstAttribute="top" secondItem="UXJ-Zn-xi4" secondAttribute="top" constant="72" id="wy0-fF-sJ6"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pCM-5K-VZb">
+                                <rect key="frame" x="0.0" y="112" width="320" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="h39-Xx-0Br">
+                                        <rect key="frame" x="20" y="0.0" width="280" height="29"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <segments>
+                                            <segment title="12H"/>
+                                            <segment title="24H"/>
+                                            <segment title="3D"/>
+                                            <segment title="7D"/>
+                                            <segment title="14D"/>
+                                        </segments>
+                                        <connections>
+                                            <action selector="periodTypeChanged:" destination="KCL-st-Q6e" eventType="valueChanged" id="sUd-iQ-znl"/>
+                                        </connections>
+                                    </segmentedControl>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="h39-Xx-0Br" secondAttribute="bottom" constant="9" id="B5o-f3-eXG"/>
+                                    <constraint firstAttribute="trailing" secondItem="h39-Xx-0Br" secondAttribute="trailing" constant="20" id="eFA-a0-FzV"/>
+                                    <constraint firstItem="h39-Xx-0Br" firstAttribute="leading" secondItem="pCM-5K-VZb" secondAttribute="leading" constant="20" id="ias-SG-FJX"/>
+                                    <constraint firstAttribute="height" constant="37" id="oXm-xp-Dx2"/>
+                                    <constraint firstItem="h39-Xx-0Br" firstAttribute="top" secondItem="pCM-5K-VZb" secondAttribute="top" id="x9L-QF-bai"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ikJ-Wo-igN">
+                                <rect key="frame" x="0.0" y="157" width="320" height="411"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ikJ-Wo-igN" firstAttribute="top" secondItem="pCM-5K-VZb" secondAttribute="bottom" constant="8" id="0vo-fC-E37"/>
+                            <constraint firstAttribute="trailing" secondItem="UXJ-Zn-xi4" secondAttribute="trailing" id="7VG-JM-NG3"/>
+                            <constraint firstItem="UXJ-Zn-xi4" firstAttribute="leading" secondItem="kP7-5S-5sI" secondAttribute="leading" id="Cya-jB-cRf"/>
+                            <constraint firstAttribute="trailing" secondItem="pCM-5K-VZb" secondAttribute="trailing" id="aYc-So-FyX"/>
+                            <constraint firstAttribute="trailing" secondItem="ikJ-Wo-igN" secondAttribute="trailing" id="fah-Z2-WUZ"/>
+                            <constraint firstItem="pCM-5K-VZb" firstAttribute="leading" secondItem="kP7-5S-5sI" secondAttribute="leading" id="gqW-Lm-3cu"/>
+                            <constraint firstItem="g5r-EZ-Jhd" firstAttribute="top" secondItem="ikJ-Wo-igN" secondAttribute="bottom" id="j5Q-d0-Qd6"/>
+                            <constraint firstItem="ikJ-Wo-igN" firstAttribute="leading" secondItem="kP7-5S-5sI" secondAttribute="leading" id="qaK-vQ-KW9"/>
+                            <constraint firstItem="pCM-5K-VZb" firstAttribute="top" secondItem="UXJ-Zn-xi4" secondAttribute="bottom" constant="8" id="qf6-mW-c7u"/>
+                            <constraint firstItem="UXJ-Zn-xi4" firstAttribute="top" secondItem="kP7-5S-5sI" secondAttribute="top" id="sLS-XC-D8N"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="cw7-7I-e2e">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="FZY-Lt-vd9">
+                            <connections>
+                                <segue destination="We1-yA-6NW" kind="unwind" identifier="DoneGraph" unwindAction="done:" id="gAb-cv-iry"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="graphView" destination="ikJ-Wo-igN" id="R28-yH-Zl6"/>
+                        <outlet property="pfpDataTypeOptions" destination="Fma-2Y-xBk" id="r6k-UY-evd"/>
+                        <outlet property="pfpTimeIntervalOptions" destination="h39-Xx-0Br" id="SsN-KC-WDJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Ag-9t-Enc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="We1-yA-6NW" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1739" y="2398"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Fertilizer Icon Segmented" width="69" height="29"/>
+        <image name="Ligth Icon Segmented" width="69" height="29"/>
+        <image name="Spray Icon Segmented" width="69" height="29"/>
+        <image name="Temperature Icon Segmented" width="69" height="29"/>
+    </resources>
+    <color key="tintColor" red="0.61176470588235299" green="0.792156862745098" blue="0.38823529411764707" alpha="1" colorSpace="calibratedRGB"/>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
