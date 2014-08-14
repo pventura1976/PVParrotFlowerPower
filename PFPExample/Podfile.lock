@@ -1,0 +1,27 @@
+PODS:
+  - JBChartView (2.7.3)
+  - Mantle (1.5):
+    - Mantle/extobjc
+  - Mantle/extobjc (1.5)
+  - ReactiveCocoa (2.3.1):
+    - ReactiveCocoa/UI
+  - ReactiveCocoa/Core (2.3.1):
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (2.3.1)
+  - ReactiveCocoa/UI (2.3.1):
+    - ReactiveCocoa/Core
+  - SVProgressHUD (1.0)
+
+DEPENDENCIES:
+  - JBChartView
+  - Mantle
+  - ReactiveCocoa
+  - SVProgressHUD
+
+SPEC CHECKSUMS:
+  JBChartView: 5583096e7484b34812fcb448b01bd9571701e0b0
+  Mantle: c67a7e45e14196ed42b2a7cbb98ff6a9920e6b92
+  ReactiveCocoa: dca75777b9d18990c8714a3a6f2149f29b4d1462
+  SVProgressHUD: 5034c6e22b8c2ca3e09402e48d41ed0340aa1c50
+
+COCOAPODS: 0.33.1
