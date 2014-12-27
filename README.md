@@ -9,7 +9,7 @@ Parrot Flower Power sensor (http://www.parrot.com/flowerpower) web API wrapper f
 
 ## Features
 
-- Basic Parrot Flower Power Web API objective-c wrapper.
+- Basic Parrot Flower Power Web API wrapper written in objective-c.
 
 ## Requirements
 
