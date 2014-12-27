@@ -408,8 +408,8 @@
         case PeriodType7Days:
             seconds *= 7 * 24;
             break;
-        case PeriodType14Days:
-            seconds *= 14 * 24;
+        case PeriodType10Days:
+            seconds *= 10 * 24;
             break;
         default:
             break;

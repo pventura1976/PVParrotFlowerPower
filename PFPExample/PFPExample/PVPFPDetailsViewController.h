@@ -20,7 +20,7 @@ typedef NS_ENUM(NSUInteger, PeriodType) {
     PeriodType24Hours,
     PeriodType3Days,
     PeriodType7Days,
-    PeriodType14Days
+    PeriodType10Days
 };
 
 static inline BOOL IsEmpty(id thing) {
